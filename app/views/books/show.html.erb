@@ -1,0 +1,15 @@
+<% form_for(@book) do |f| %>
+
+<p>
+  <b><%= f.label :name %></b>
+  <%=h @book.name %>
+</p>
+<p>
+  <b><%= f.label :published_date %></b>
+  <%=h @book.published_date %>
+</p>
+<% end %>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
